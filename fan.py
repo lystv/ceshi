@@ -23,7 +23,7 @@ def get_fan_conf():
 
     try:
         old_md5 = config.get("md5", "conf")
-        if md5 == old_md5:
+        if md5 !== old_md5:
             print("No update needed")
             return
     except:
